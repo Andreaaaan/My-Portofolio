@@ -399,7 +399,7 @@ elif page == "Customer Segmentation With Gradient Boosting":
 elif page == "Prediction Test Covid-19 using Machine learning":
     st.title("COVID-19 Prediction Test using Machine Learning")
     
-    @st.cache
+    @st.cache_resource
     def load_model():
         return joblib.load('model_parallel.pkl')
     
@@ -441,4 +441,5 @@ elif page == "Prediction Test Covid-19 using Machine learning":
         except ValueError as e:
             st.error(f"Error: {e}")
             st.write("Pastikan jumlah fitur input sesuai dengan model yang digunakan.")
+
 
