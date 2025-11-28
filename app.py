@@ -33,7 +33,7 @@ page = st.sidebar.selectbox(
         "About Me", 
         "Customer Segmentation with XGboost and Random Forest", 
         "Customer Segmentation With Gradient Boosting", 
-        "Customer Segmentation Using Unsupervised Learning"
+        "Customer Segmentation Using Unsupervised Learning",
         "Prediction Test Covid-19 using Machine learning"
     ]
 )
@@ -441,3 +441,4 @@ elif page == "Prediction Test Covid-19 using Machine learning":
         except ValueError as e:
             st.error(f"Error: {e}")
             st.write("Pastikan jumlah fitur input sesuai dengan model yang digunakan.")
+
